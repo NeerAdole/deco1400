@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacts | Neer Adole</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<!-- EmailJS Library -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("a-B2aBCiiU1U8_Ehw");
+  })();
+</script>
+<script src="email.js"></script>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo">Neer</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="experiences.html">Experiences</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>  
+
+  <main class="contact-page">
+    <h1>Contacts</h1>
+
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="email-block">
+          <h3>Email me</h3>
+          <p>
+            <a href="mailto:n.adole@student.uq.edu.au">n.adole@student.uq.edu.au</a>
+          </p>          
+        </div>
+        <div class="social-block">
+          <h3>Social Profiles</h3>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/neer-adole" target="_blank">
+              <img src="assets/icons/linkedin.png" alt="LinkedIn" title="LinkedIn" />
+            </a>
+            <a href="https://github.com/NeerAdole" target="_blank">
+              <img src="assets/icons/github.png" alt="GitHub" title="GitHub" />
+            </a>
+            <a href="https://www.instagram.com/neermwah" target="_blank">
+              <img src="assets/icons/instagram.png" alt="Instagram" title="Instagram" />
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    
+      <form id="contact-form" class="form-block">
+        <input type="text" name="name" placeholder="Your name" required />
+        <input type="tel" name="phone" placeholder="Your phone number" required />
+        <textarea name="message" placeholder="Your message" required></textarea>
+        <button type="submit">Send message</button>
+      </form>
+      
+    </div>
+    
+  </main>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("a-B2aBCiiU1U8_Ehw");
+  })();
+</script>
+<script src="email.js"></script>
+</body>
+</html>
